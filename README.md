@@ -4,6 +4,14 @@
 
 Measure the reconstruction–regularization trade-off of two variational autoencoders on a small tabular benchmark.
 
+
+## Train and reload both VAEs
+
+The noninteractive path reruns both 80-epoch models and reproduces deterministic held-out reconstruction MSE**0.283078 for β=1** and**0.323131 for β=4**. Both state dictionaries and the training-fitted scaler are exported; fresh-model reloads verify the same scores.
+
+[Commands, artifacts and benchmark scope](BENCHMARKS.md) · [Versioned profiles](reproduction.json)
+
+
 ## Implementation
 
 A 30-feature, two-dimensional-latent VAE with beta values 1 and 4, deterministic mean-latent reconstruction checks, latent visualization, and generated-feature comparisons.
@@ -52,4 +60,5 @@ Feature generation is a statistical demonstration, not clinically valid syntheti
 ## Development
 
 Changes should include a clear description of the behavior affected and verification appropriate to that behavior. Keep input data, credentials, model caches, and generated artifacts outside version control.
+
 

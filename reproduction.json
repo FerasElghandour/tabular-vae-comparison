@@ -1,0 +1,36 @@
+{
+  "repository": "tabular-vae-comparison",
+  "version_packages": [
+    "numpy",
+    "torch",
+    "pandas",
+    "scikit-learn"
+  ],
+  "profiles": {
+    "checks": {
+      "scope": "Existing focused regression suite",
+      "commands": [
+        [
+          "{python}",
+          "smoke_test.py"
+        ]
+      ]
+    },
+    "full-benchmark": {
+      "scope": "Original fixed80epoch \u03b21/\u03b24 notebook comparison and fresh-model checkpoint reload",
+      "commands": [
+        [
+          "{python}",
+          "train.py",
+          "--output",
+          "{output}/run"
+        ],
+        [
+          "{python}",
+          "verify_checkpoint.py",
+          "{output}/run"
+        ]
+      ]
+    }
+  }
+}

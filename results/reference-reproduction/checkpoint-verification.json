@@ -1,0 +1,12 @@
+{
+  "vae_a": {
+    "mse": 0.28307801485061646,
+    "checkpoint_sha256": "282433b960c028fbca747be165ec43dc3517ca51568cc1d860a314cf3e751422",
+    "strict_load": true
+  },
+  "vae_b": {
+    "mse": 0.32313090562820435,
+    "checkpoint_sha256": "bb08e65e506e0907ba216fc66ae578cdcc67a651c5202359c70cd2e3830f0ceb",
+    "strict_load": true
+  }
+}

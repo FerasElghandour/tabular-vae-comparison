@@ -1,0 +1,14 @@
+{
+  "fi": 22,
+  "fname": "worst perimeter",
+  "cls": 1,
+  "color": "steelblue",
+  "lbl": "Benign",
+  "total_params": 12706,
+  "mse_a": 0.2830780386227613,
+  "mse_b": 0.3231309277272364,
+  "key": "kl",
+  "title": "\u03b2-VAE (\u03b2=4)",
+  "i": 7,
+  "diag": "M"
+}
