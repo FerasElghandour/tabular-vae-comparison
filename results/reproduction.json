@@ -1,0 +1,23 @@
+{
+  "slug": "tabular-vae-comparison",
+  "date": "2026-10-17",
+  "notebook_sha256": "d6cff179c51cf2c5001d86d66e6f2b783c43d559535d68b876b41a89797c3052",
+  "code_cells": 14,
+  "numpy": "2.5.4",
+  "pandas": "3.0.6",
+  "torch": "2.14.1",
+  "sklearn": "1.9.1",
+  "inputs": {},
+  "metrics": {
+    "mse_a": 0.2830780386227613,
+    "mse_b": 0.3231309277272364
+  },
+  "plots": [
+    "figure-01.png",
+    "figure-02.png",
+    "figure-03.png",
+    "figure-04.png",
+    "figure-05.png"
+  ],
+  "status": "passed"
+}
