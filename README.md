@@ -28,11 +28,6 @@ The environment versions, input hashes, and notebook hash are recorded in [resul
 
 Replotted from [results/reproduction.json](results/reproduction.json): test reconstruction MSE is 0.2831 at β=1 and 0.3231 at β=4. Scaling is fitted on training data only. [Input-distribution figure](assets/figure-01.png).
 
-## Practical relevance
-
-This project demonstrates a 30-feature, two-dimensional-latent VAE with beta values 1 and 4, deterministic mean-latent reconstruction checks, latent visualization, and generated-feature comparisons.
-The implementation and evaluation make the trade-offs inspectable for technical review.
-
 ## Run locally
 
 ```sh
@@ -57,3 +52,4 @@ Feature generation is a statistical demonstration, not clinically valid syntheti
 ## Development
 
 Changes should include a clear description of the behavior affected and verification appropriate to that behavior. Keep input data, credentials, model caches, and generated artifacts outside version control.
+
