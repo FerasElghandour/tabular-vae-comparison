@@ -8,12 +8,9 @@ Measure the reconstruction–regularization trade-off of two variational autoenc
 
 A 30-feature, two-dimensional-latent VAE with beta values 1 and 4, deterministic mean-latent reconstruction checks, latent visualization, and generated-feature comparisons.
 
-```mermaid
-flowchart LR
-    A[Input preparation] --> B[Implementation]
-    B --> C[Evaluation]
-    C --> D[Results and interpretation]
-```
+![Implemented VAE training path](https://raw.githubusercontent.com/FerasElghandour/FerasElghandour.github.io/main/assets/vae-training.svg)
+
+Training uses a sampled two-dimensional latent vector and a reconstruction-plus-KL objective. Deterministic reconstruction evaluation uses the latent mean.
 
 ## Evidence and results
 
@@ -27,7 +24,9 @@ After fitting scaling only on training records, mean-latent test reconstruction 
 
 The environment versions, input hashes, and notebook hash are recorded in [results/reproduction.json](results/reproduction.json).
 
-![Analysis result](assets/figure-01.png)
+![Recorded test reconstruction comparison](https://raw.githubusercontent.com/FerasElghandour/FerasElghandour.github.io/main/assets/vae-comparison.png)
+
+Replotted from [results/reproduction.json](results/reproduction.json): test reconstruction MSE is 0.2831 at β=1 and 0.3231 at β=4. Scaling is fitted on training data only. [Input-distribution figure](assets/figure-01.png).
 
 ## Practical relevance
 
